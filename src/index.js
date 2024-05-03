@@ -16,8 +16,8 @@ root.render(
     <BrowserRouter basename={'/tryApp'}> 
     {/*<NavbarHash/><HashRouter >*/}
     <Routes>
-    <Route path='/tryApp' element={<Home/>} />
-    <Route path='/Form' element={<App/>} />
+    <Route path='/form' element={<Home/>} />
+    <Route path='/' element={<App/>} />
    {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
     {/*</HashRouter>*/}
