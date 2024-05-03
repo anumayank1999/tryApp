@@ -13,12 +13,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar/>
-    <App/>
+    
     <BrowserRouter basename={'/tryApp'}> 
     {/*<NavbarHash/><HashRouter >*/}
     <Routes>
-    <Route path='/form' element={<Home/>} />
-    <Route path='/' element={<App/>} />
+    <Route path='/' element={<Home/>} />
+    <Route path='/form' element={<App/>} />
    {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
     {/*</HashRouter>*/}

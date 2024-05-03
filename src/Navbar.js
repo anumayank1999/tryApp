@@ -6,7 +6,7 @@ const Navbar = () => {
       <>
         <nav>
         <a href='/tryApp/' style={{ marginRight: 10 }}>Home </a>
-        <a href='/Form'>Forum </a>
+        <a href='/form'>Forum </a>
         </nav>
       </>
   )
