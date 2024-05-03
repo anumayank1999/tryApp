@@ -6,19 +6,22 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import Home from './Home';
 import NotFound from './NotFound';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter , BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar/>
-    <BrowserRouter >
+    {/*<BrowserRouter> */}
+    <HashRouter >
     <Routes>
-    <Route path='/tryApp' element={<Home/>} />
-    <Route path='/tryApp/Form' element={<App/>} />
+    <Route path='/' element={<Home/>} />
+    <Route path='/Form' element={<App/>} />
    {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    {/*</BrowserRouter> */}
+
   </React.StrictMode>
 );
 
