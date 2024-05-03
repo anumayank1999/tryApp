@@ -30,7 +30,7 @@ root.render(
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/form' element={<App/>} />
-   {/* <Route path="*" element={<NotFound/>}/> */}
+    <Route path="/*" element={<NotFound/>}/>
     </Routes>
     </HashRouter>
     {/*</BrowserRouter> */}
