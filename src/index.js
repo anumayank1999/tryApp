@@ -14,8 +14,8 @@ root.render(
     <Navbar/>
     <BrowserRouter>
     <Routes>
-    <Route path='/tryApp' element={<Home/>} />
-    <Route path='/tryApp/Form' element={<App/>} />
+    <Route path='/' element={<Home/>} />
+    <Route path='/Form' element={<App/>} />
    {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
     </BrowserRouter>
