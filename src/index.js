@@ -16,7 +16,7 @@ root.render(
     <Routes>
     <Route path='/tryApp' element={<Home/>} />
     <Route path='/tryApp/Form' element={<App/>} />
-    <Route path="*" element={<NotFound/>}/>
+   {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
