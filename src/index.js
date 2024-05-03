@@ -7,22 +7,33 @@ import Navbar from './Navbar';
 import Home from './Home';
 import NavbarHash from './NavbarHash';
 import NotFound from './NotFound';
-import { HashRouter , BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter , BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar/>
     
-    <BrowserRouter basename={'/tryApp'}> 
-    {/*<NavbarHash/><HashRouter >*/}
+    {/*<Navbar/>
+    <BrowserRouter basename={'/tryApp'}> */}
+    <HashRouter >
+    <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/form">About</Link>
+                    </li>
+                </ul>
+            </nav>
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/form' element={<App/>} />
    {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
-    {/*</HashRouter>*/}
-    </BrowserRouter> 
+    </HashRouter>
+    {/*</BrowserRouter> */}
 
   </React.StrictMode>
 );
