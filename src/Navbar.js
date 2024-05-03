@@ -5,8 +5,8 @@ const Navbar = () => {
     
       <>
         <nav>
-        <a href='/#' style={{ marginRight: 10 }}>Home </a>
-        <a href='/#/Form'>Forum </a>
+        <a href='/' style={{ marginRight: 10 }}>Home </a>
+        <a href='/Form'>Forum </a>
         </nav>
       </>
   )

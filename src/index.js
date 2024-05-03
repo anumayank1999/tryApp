@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import Home from './Home';
+import NavbarHash from './NavbarHash';
 import NotFound from './NotFound';
 import { HashRouter , BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -12,15 +13,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar/>
-    {/*<BrowserRouter> */}
-    <HashRouter >
+    <BrowserRouter basename={'/tryApp'}> 
+    {/*<NavbarHash/><HashRouter >*/}
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/Form' element={<App/>} />
    {/* <Route path="*" element={<NotFound/>}/> */}
     </Routes>
-    </HashRouter>
-    {/*</BrowserRouter> */}
+    {/*</HashRouter>*/}
+    </BrowserRouter> 
 
   </React.StrictMode>
 );
